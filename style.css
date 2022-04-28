@@ -1,0 +1,57 @@
+
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  margin: auto;
+  font-size: 50px;
+}
+
+#container {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: repeat(var(--numCols), 1fr);
+  grid-template-rows: repeat(var(--numRows), 1fr);
+  width: 550px;
+  height: 550px;
+  border: black solid 8px;
+}
+
+#outerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: black solid 8px;
+  height: 650px;
+  width: 650px;
+  background-color: orange;
+}
+
+.cell {
+  display: flex;
+  padding: 3px;
+  border: 1px solid black;
+  background-color: lightgrey;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resetBtn, .colorBtn, .sizeBtn, .brownBtn {
+  background-color: rgb(133, 133, 190);
+  height: 40px;
+  width: 100px;
+  margin: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
